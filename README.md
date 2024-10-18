@@ -1,4 +1,7 @@
 # Topological Sort for Directed Acyclic Graphs
+- Jinkai Zhang - Java Implementation
+- Diego Mackay - C++ Implementation
+- Jakob Upton - Python Implementation
 
 ## Instructions for Running
 Python Implementation
@@ -12,17 +15,15 @@ python -m toposorttest
 
 ### Diego C++
 
-Analysis Framework
-
-Time Complexity
+#### Time Complexity
 THe DFS function is linear as it calls itself n times the size of the class size
 the topological sort function is O(N^2) as the topological sort calls the DFS function N times 
 
-Space complexity 
+#### Space complexity 
 DFS and Topological sort functions are both O(n^2) because of the adjaceny matrix. While all other data structures are O(n) the adj matrix dominates
 
 ### Jakob Python Analysis
-Space and Time Complexity
+#### Space and Time Complexity
 DFS function is called for each node in the graph. Each edge and node is only visited once.
 The total number of iterations over all nodes and their prerequisites is how many edges we have in our graph.
 
